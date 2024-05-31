@@ -1,0 +1,78 @@
+.title-first p {
+    padding-top: 10%;
+    font-size: 500%;
+    font-family: 'Star Wars', sans-serif;
+    color:#face1d;
+    text-align: center;
+}
+
+.title-second {
+    padding-top: 20px;
+    font-size: 350%;
+    color: #face1d;
+    text-align: center;
+}
+
+.title-second i {
+    font-family: 'Aurebesh', sans-serif;
+}
+
+
+.movie-poster {
+    width: 100%;
+    display: flex;
+    padding-bottom: 150px;
+}
+
+.movies-poster-grid {
+    margin: auto;
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 60px;
+    cursor: pointer;
+}
+
+.movies-poster-grid img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 30px #face1d;
+}
+
+
+.movie-title p {
+    padding-top: 20px;
+    font-size: 90%;
+    font-family: 'Star Wars', sans-serif;
+    color: #face1d;
+    text-align: center;
+}
+
+.movie-subtitle {
+    font-size: 80%;
+    color:#face1d;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.movie-subtitle i {
+    font-family: 'Aurebesh', sans-serif;
+}
+
+@media (max-width: 700px) {
+    .movies-poster-grid {
+        left: 5%;
+        right: 5%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .movies-poster-grid {
+        left: 15%;
+        right: 15%;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

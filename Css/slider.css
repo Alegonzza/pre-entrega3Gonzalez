@@ -1,0 +1,74 @@
+.container-slider {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 9%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 0px #face1d,
+                0 0px 40px #face1d;
+
+    position: relative;
+    cursor: pointer;
+} 
+
+.slider {
+    width: 900%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section {
+    width: 100%;
+    animation: slide 40s infinite alternate linear;
+}
+
+.slider-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    10% {transform: translateX(0);}
+
+    12% {transform: translateX(-100%);}
+    22% {transform: translateX(-100%);}
+
+    24% {transform: translateX(-200%);}
+    34% {transform: translateX(-200%);}
+
+    36% {transform: translateX(-300%);}
+    46% {transform: translateX(-300%);}
+
+    48% {transform: translateX(-400%);}
+    58% {transform: translateX(-400%);}
+
+    60% {transform: translateX(-500%);}
+    70% {transform: translateX(-500%);}
+
+    72% {transform: translateX(-600%);}
+    82% {transform: translateX(-600%);}
+
+    84% {transform: translateX(-700%);}
+    94% {transform: translateX(-700%);}
+
+    96% {transform: translateX(-800%);}
+    100% {transform: translateX(-800%);}
+
+}
+
+@media (max-width:1300px) {
+    .container-slider {
+        margin-top: 10%;
+    }
+} 
+
+
+@media (max-width:400px) {
+    .container-slider {
+        margin-top: 10%;
+    }
+} 
